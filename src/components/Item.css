@@ -1,0 +1,8 @@
+.item {
+  width: 100%;
+  flex: 1 1 auto;
+
+  background-color: green;
+  min-height: 200px;
+  max-height: 200px;
+}

@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import SideBar from "./components/SideBar";
+import { useState } from "react";
 
+import "./App.css";
 function App() {
+  const [slider, setSlider] = useState(true);
+  const handleSlider = (event) => {
+    setSlider(!slider);
+  };
+  const hideSlider = (event) => {
+    setSlider(false);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="slider-button" onClick={handleSlider}>
+        KOSZYK
+      </button>
+      <div className="filler" onClick={hideSlider}></div>
+      {slider ? <SideBar handleSlider={handleSlider} /> : null}
     </div>
   );
 }

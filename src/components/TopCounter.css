@@ -1,0 +1,14 @@
+.top-counter {
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+  min-height: 200px;
+}
+
+.slider-button-top {
+  max-height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  margin: 5px;
+  float: right;
+}

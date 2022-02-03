@@ -1,0 +1,8 @@
+.summary {
+  color: black;
+  background-color: blue;
+  bottom: 0;
+  width: 100%;
+  position: sticky;
+  min-height: 200px;
+}

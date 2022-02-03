@@ -1,0 +1,15 @@
+.side-bar {
+  display: flex;
+  position: relative; /*to be over x */
+  flex-direction: column;
+  height: 100vh;
+  width: 36%;
+  min-width: 460px;
+  max-width: 520px;
+  background-color: red;
+  display: flex;
+  margin-right: 0px;
+  margin-left: auto;
+  text-align: center;
+  z-index: 40;
+}
