@@ -2,7 +2,7 @@ import React, { useContext, useReducer, useEffect, createContext } from "react";
 import cartItems from "../data/Data.json";
 import Reducer from "./Reducer";
 
-const AppContext = createContext();
+const AppContext = createContext("");
 
 const url = "https://fakestoreapi.com/products?limit=2";
 

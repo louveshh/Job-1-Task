@@ -3,13 +3,15 @@ import "./Background.css";
 import { useGlobalContext } from "./AppProvider";
 
 const Background = () => {
-  const { switchCart, hideCart } = useGlobalContext();
+  const { hide, switchCart, hideCart } = useGlobalContext();
 
   return (
     <div>
-      <button className="slider-button" onClick={switchCart}>
-        KOSZYK
-      </button>
+      {!hide ? (
+        <button className="slider-button" onClick={switchCart}>
+          KOSZYK
+        </button>
+      ) : null}
       <div className="filler" onClick={hideCart}></div>
     </div>
   );

@@ -1,6 +1,6 @@
 .extra-back {
   position: sticky;
-  height: 400px;
+  height: 370px;
   background-color: #b9b9ed;
 }
 
@@ -18,6 +18,11 @@
 .title {
   margin-bottom: 20px;
 }
+@media only screen and (max-device-width: 1500px) {
+  .extra-back {
+    min-height: 390px;
+  }
+}
 
 @media only screen and (max-device-width: 460px) {
   .extra {
@@ -25,8 +30,7 @@
     justify-content: baseline;
   }
   .extra-back {
-    position: sticky;
-    height: 370px;
-    background-color: #b9b9ed;
+    min-height: 440px;
+    clear: both;
   }
 }
