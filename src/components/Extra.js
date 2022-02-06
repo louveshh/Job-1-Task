@@ -12,8 +12,18 @@ const Extra = () => {
         <span>Recommended Products:</span>
       </div>
       <div className="extra">
-        <ExtraItem className="element1" {...extra[0]} hasMargin={true} />
-        <ExtraItem className="element2" {...extra[1]} />
+        {extra ? (
+          <>
+            <ExtraItem className="element1" {...extra[0]} hasMargin={true} />
+
+            <ExtraItem className="element2" {...extra[1]} />
+          </>
+        ) : (
+          <>
+            <ExtraItem className="element1" hasMargin={true} />
+            <ExtraItem className="element2" />
+          </>
+        )}
       </div>
     </div>
   );
