@@ -3,19 +3,32 @@ import Item from "./Item";
 import "./SideBar.css";
 import Summary from "./Summary";
 import TopCounter from "./TopCounter";
-import Data from "../data/Data.json";
-const SideBar = (param) => {
+import { useGlobalContext } from "./AppProvider";
+import Extra from "./Extra";
+const SideBar = (props) => {
+  const { cart } = useGlobalContext();
+
   return (
     <div className="side-bar">
-      <TopCounter handleSlider={param.handleSlider} />
+      <TopCounter />
 
-      {Data.items.map((item) => {
-        console.log(item.product_name);
+      <form onSubmit={() => {}}>
+        <div className="back">
+          {cart.map((item, index) => {
+            return (
+              <div key={item.id}>
+                <Item {...item} />
+                {/* {cart.length === index + 1 ? (
+                  <div className="fix-summary"></div>
+                ) : null} */}
+              </div>
+            );
+          })}
+          <Extra />
+        </div>
 
-        return <Item key={item.id} {...item} />;
-      })}
-
-      <Summary />
+        <Summary />
+      </form>
     </div>
   );
 };

@@ -55,6 +55,16 @@
         "current_price": 120.5
       },
       "product_options": []
+    },
+    {
+      "id": "4",
+      "product_name": "Backpack XL",
+      "image": "https://picsum.photos/250/150?random=1",
+      "qty": 1,
+      "price": {
+        "current_price": 160.5
+      },
+      "product_options": []
     }
   ]
 }

@@ -1,21 +1,23 @@
 .item {
   width: 100%;
+
   background-color: white;
+
   margin-top: 2px;
 }
 
-.grid-container {
+.flex-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 3fr;
 }
 
-.grid-pic {
+.flex-pic {
   grid-column: 1;
   grid-row: 2/1;
   background-color: white;
   display: flex;
-  margin-left: 30px;
+  justify-content: center;
 }
 .image {
   display: flex;
@@ -24,20 +26,21 @@
   height: 75px !important;
   overflow: hidden;
 }
-.grid-pic img {
+.flex-pic img {
   object-fit: cover;
   width: 100%;
 }
-.grid-info {
+.flex-info {
   grid-column: 2 / 4;
   grid-row: 1;
-  background-color: white;
+  background-color: yellow;
 }
 
 .info {
   margin-top: 20px;
+  margin-left: 10px;
   margin-right: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .info .justify {
   display: flex;
@@ -63,13 +66,12 @@
   color: #6969d1;
 }
 
-.grid-qty {
+.flex-qty {
   grid-row: 2;
   grid-column: 2/4;
-  background-color: white;
+  background-color: Green;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .qty-price p {
@@ -91,7 +93,7 @@
   margin-top: 30px;
   display: flex;
 }
-.grid-qty span {
+.flex-qty span {
   margin-top: 8px;
   font-weight: bold;
   font-size: 14px;
@@ -102,7 +104,7 @@
   cursor: pointer;
   border: 1px solid #b9b9ed;
   display: grid;
-  grid-template-columns: 30px 50px 30px;
+  grid-template-columns: 1fr 1.5fr 1fr;
   max-width: 120px;
   height: 30px;
   border-radius: 4px;
@@ -149,31 +151,28 @@
   border-bottom-right-radius: 3px;
   grid-column: 3;
 }
-.justify svg path {
-  fill: gray;
-}
 
 @media only screen and (max-device-width: 460px) {
   .item {
     min-height: 170px;
-    max-height: 170px;
+    max-height: 1700px;
   }
-  .grid-container {
+  .flex-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px 50px;
   }
 
-  .grid-pic {
+  .flex-pic {
     grid-column: 1/2;
     grid-row: 1 /2;
   }
 
-  .grid-info {
+  .flex-info {
     grid-column: 2/4;
     grid-row: 1;
   }
-  .grid-qty {
+  .flex-qty {
     grid-row: 2;
     grid-column: 1/4;
   }

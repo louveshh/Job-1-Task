@@ -1,0 +1,18 @@
+.slider-button {
+  margin: 5px;
+  z-index: 4;
+  position: fixed; /*to be under sidebar */
+  right: 0;
+  top: 0;
+}
+
+.filler {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 0;
+
+  background-color: #5050ba;
+}

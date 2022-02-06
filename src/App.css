@@ -1,22 +1,9 @@
 .App {
   display: flex;
+  font-size: 22px;
 }
-
-.slider-button {
-  margin: 5px;
-  z-index: 4;
-  position: fixed; /*to be under sidebar */
-  right: 0;
-  top: 0;
-}
-
-.filler {
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 0;
-
-  background-color: pink;
+@media only screen and (max-device-width: 460px) {
+  .App {
+    font-size: 14px;
+  }
 }

@@ -1,23 +1,13 @@
 import SideBar from "./components/SideBar";
-import { useState } from "react";
-
+import { useGlobalContext } from "./components/AppProvider";
 import "./App.css";
+import Background from "./components/Background";
 function App() {
-  const [slider, setSlider] = useState(true);
-  const handleSlider = (event) => {
-    setSlider(!slider);
-  };
-  const hideSlider = (event) => {
-    setSlider(false);
-  };
-
+  const { hide } = useGlobalContext();
   return (
     <div className="App">
-      <button className="slider-button" onClick={handleSlider}>
-        KOSZYK
-      </button>
-      <div className="filler" onClick={hideSlider}></div>
-      {slider ? <SideBar handleSlider={handleSlider} /> : null}
+      <Background />
+      {hide ? <SideBar /> : null}
     </div>
   );
 }
