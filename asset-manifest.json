@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/praca2/static/css/main.82c4c899.css",
-    "main.js": "/praca2/static/js/main.cbdb0850.js",
-    "static/js/787.21ec2153.chunk.js": "/praca2/static/js/787.21ec2153.chunk.js",
-    "index.html": "/praca2/index.html",
-    "main.82c4c899.css.map": "/praca2/static/css/main.82c4c899.css.map",
-    "main.cbdb0850.js.map": "/praca2/static/js/main.cbdb0850.js.map",
-    "787.21ec2153.chunk.js.map": "/praca2/static/js/787.21ec2153.chunk.js.map"
+    "main.css": "/Job-1-Task/static/css/main.82c4c899.css",
+    "main.js": "/Job-1-Task/static/js/main.4009ad13.js",
+    "static/js/787.a5a00b74.chunk.js": "/Job-1-Task/static/js/787.a5a00b74.chunk.js",
+    "index.html": "/Job-1-Task/index.html",
+    "main.82c4c899.css.map": "/Job-1-Task/static/css/main.82c4c899.css.map",
+    "main.4009ad13.js.map": "/Job-1-Task/static/js/main.4009ad13.js.map",
+    "787.a5a00b74.chunk.js.map": "/Job-1-Task/static/js/787.a5a00b74.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82c4c899.css",
-    "static/js/main.cbdb0850.js"
+    "static/js/main.4009ad13.js"
   ]
 }
