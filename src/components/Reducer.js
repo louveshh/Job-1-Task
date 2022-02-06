@@ -61,9 +61,7 @@ const Reducer = (state, action) => {
       }
     );
 
-    if (total !== 0) {
-      total += shipping;
-    }
+    total += shipping;
 
     total = parseFloat(total.toFixed(2));
 
