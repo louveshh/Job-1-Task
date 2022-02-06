@@ -5,7 +5,7 @@
 ### Solution can be found in folder "components":
 
 - I decided to split the problem into multiple components 
-- I could make Qty as components but I didn't want to overcomplicate it. 
+- I could make Qty as components but I didn't want to overcomplicate it 
 - The main component is "SideBar.js"
 - Components tree:
 
@@ -24,7 +24,7 @@
   - Also, I didn`t add any extra styling such as hover effect, etc.\
     (because it was not in styling specification and I stick to that)
 - Images are in 4:3 format. 
-  - Products images fit the 4:3 format. 
+  - Products images fit the 4:3 format 
   - Upsell products use "max heigh" in 4:3 format
 
 ### Requirements:
@@ -39,10 +39,10 @@
 1. User can change the quantity by typing, additionally, I provided validation that\
     You must input A NUMBER between 1 and 10. Empty input "" Is treated as a 0.\
     Nevertheless, Input does have the HTML attribute "required",\
-    so the form shouldn`t allow being left empty. 
+    so the form shouldn`t allow being left empty 
 2. I added this button. 
     - Behind the cart, you might find the "Open Cart" button to restore the cart.
-    - Top Right "X" button and somewhere outside the minecart hide the cart.
+    - Top Right "X" button and somewhere outside the minecart cause the cart to hide
 3. Data is fetched 
    - I used a new component "ExtraItem" to handle the received format
    - Upsell product styles similar to visualization
