@@ -9,7 +9,7 @@ const Background = () => {
     <div>
       {!hide ? (
         <button className="slider-button" onClick={switchCart}>
-          KOSZYK
+          Open Cart
         </button>
       ) : null}
       <div className="filler" onClick={hideCart}></div>

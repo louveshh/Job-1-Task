@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "./Item.css";
 import { useGlobalContext } from "./AppProvider";
+
 
 const Item = ({ qty, id, image, product_name, product_options, price }) => {
   const { currency, increaseAmount, decreaseAmount, setAmount, removeItem } =
     useGlobalContext();
-  const [color, setColor] = useState(qty);
-
   const handleInput = (event) => {
     if (!isNaN(event.target.value) || event.target.value === "") {
       if (event.target.value === "") {
@@ -101,6 +100,7 @@ const Item = ({ qty, id, image, product_name, product_options, price }) => {
                 <img src="https://img.icons8.com/android/16/ffffff/plus.png" />
               </div>
             </div>
+      
           </div>
           <div className="qty-price">
             <p className="p1">
