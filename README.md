@@ -38,7 +38,7 @@
 ### Optional Requirements:
 1. User can change the quantity by typing, additionally, I provided validation that\
     You must input A NUMBER between 1 and 10. Empty input "" Is treated as a 0.\
-    Nevertheless, Input does have the HTML attribute "required",\ 
+    Nevertheless, Input does have the HTML attribute "required", \ 
     so the form shouldn`t allow being left empty. 
 2. I added this button. 
     - Behind the cart, you might find the "Open Cart" button to restore the cart.
