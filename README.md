@@ -8,6 +8,8 @@
 - I could make Qty as a components but I didnt want to overcomplicate it. 
 - The main component is "SideBar.js"
 - Components tree:
+
+
 ![Tree](https://github.com/lukasz-b96/Job-1-Task/blob/main/Tree.png)
 
 ### The approach to the problem:
