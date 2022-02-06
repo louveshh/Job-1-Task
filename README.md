@@ -21,7 +21,7 @@
     - Reducer.js holds all dispatch actions  
 - Moreover, I fetch the data for upsell products by useEffect
 - I decided not to use an external css/components library (just to showcase)
-  - Also, I didn`t add any extra styling such as hover effect, etc.
+  - Also, I didn`t add any extra styling such as hover effect, etc.\
     (because it was not in styling specification and I stick to that)
 - Images are in 4:3 format. 
   - Products images fit the 4:3 format. 
