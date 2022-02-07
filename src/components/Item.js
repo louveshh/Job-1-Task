@@ -78,7 +78,7 @@ const Item = ({ qty, id, image, product_name, product_options, price }) => {
                   }
                 }}
               >
-                <img src="https://img.icons8.com/material-outlined/16/ffffff/minus.png" />
+                <img src="https://img.icons8.com/material-outlined/16/ffffff/minus.png" alt="img" />
               </div>
               <div className="qty2">
                 <input required onChange={handleInput} value={qty ? qty : ""} />
@@ -86,7 +86,7 @@ const Item = ({ qty, id, image, product_name, product_options, price }) => {
               <div
                 className="qty3"
                 style={
-                  qty != 10
+                  qty !== 10
                     ? { backgroundColor: "#5050BA" }
                     : { backgroundColor: "#B9B9ED" }
                 }
@@ -97,7 +97,7 @@ const Item = ({ qty, id, image, product_name, product_options, price }) => {
                   }
                 }}
               >
-                <img src="https://img.icons8.com/android/16/ffffff/plus.png" />
+                <img src="https://img.icons8.com/android/16/ffffff/plus.png" alt="img" />
               </div>
             </div>
       

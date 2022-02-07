@@ -12,7 +12,6 @@ const initialState = {
   hide: true,
   loading: false,
   total: 0,
-  currency: cartItems.currency,
   shipping: cartItems.shipping,
   extra: [],
 };
